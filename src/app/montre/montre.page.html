@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <a routerLink="/home" style="text-decoration: none;color: black;"><ion-title><ion-icon name="arrow-back-outline"></ion-icon>Alarme Edit</ion-title></a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-item >
+    <ion-label>Enregistrer une Alarme</ion-label>
+    <input type="time"  [(ngModel)]="tem">
+    <ion-button color="secondary" (click)="saveHoure()" round>Save</ion-button>
+    
+  </ion-item>
+  <ion-card style="height:130px; width:200px; margin-left: 80px;" *ngFor="let list of tab; let ind= index">
+    
+    <img src="https://cdn.pixabay.com/photo/2017/01/08/22/27/alarm-1964166_960_720.jpg" />
+    <div class="card-title" >Alarme {{ind}}</div>
+    <div class="card-subtitle" style="margin-top: 10px; font-size: 20px;margin-left: 20px;">{{list}}
+      <ion-button color="danger" style="height:25px; width:30px;font-size: 8px;margin-left: 30px;" (click)="supprHoure(ind)" round>suppr</ion-button>
+    </div>
+   
+  </ion-card>
+</ion-content>
+ 

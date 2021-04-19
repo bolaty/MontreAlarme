@@ -1,0 +1,7 @@
+{
+  "name": "montreAlarme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
